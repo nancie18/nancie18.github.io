@@ -1,0 +1,65 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 電腦版樣式 */
+@media (min-width: 768px) {
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+}
+
+/* 手機版樣式 */
+@media (max-width: 767px) {
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+}
+
+.heroimg{
+    background-image: url(06.jpg);
+    background-size: cover;
+    justify-content:center
+}
+
+.text-mary{
+    color: #fff0f8; 
+    justify-content:center
+}
+
+.btn-mary{
+    background-color: #3aefff;
+    color: #f15eb1;
+    justify-content:center
+}
+
+.btn-mary:hover{
+    background-color: #ffdaf3;
+}
+
+.btn-yy{
+    background-color: #fe8fce;
+    color: #ffffff;
+}
+
+.btn-yy:hover{
+    background-color: #3aefff;
+}
+
+.card{
+    transition: all .4s;
+}
+
+.card:hover{
+    transform: translate(5px,0px);
+}
+
+.bg-primary{
+    background-color: #f8c6bd;
+}
