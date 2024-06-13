@@ -9,7 +9,7 @@
     .box {
         width: 200px;
         height: 200px;
-        background-color: red;
+        background-color: rgb(255, 255, 255);
     }
 }
 
@@ -22,38 +22,134 @@
     }
 }
 
-.heroimg{
+.heroimg {
     background-image: url(06.jpg);
     background-size: cover;
-    justify-content:center
+    justify-content: center
 }
 
-.text-mary{
-    color: #fff0f8; 
-    justify-content:center
+.cr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
 }
 
-.btn-mary{
+.card{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-mary {
+    color: #fff0f8;
+    justify-content: center
+}
+
+.btn-mary {
     background-color: #3aefff;
     color: #f15eb1;
-    justify-content:center
+    justify-content: center
 }
 
-.btn-mary:hover{
+.btn-mary:hover {
     background-color: #ffdaf3;
 }
 
-.btn-yy{
+.btn-yy {
     background-color: #fe8fce;
     color: #ffffff;
 }
 
-.btn-yy:hover{
+.btn-yy:hover {
     background-color: #3aefff;
+}
+
+.btn-yy:hover {
+    background-color: #3aefff;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: 200px;
+    animation: move 20s infinite linear;
+    padding-bottom: 25%;
+}
+
+.box.active {
+    animation-play-state: paused;
+}
+
+/* .box:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.case {
+    display: flex;
+    gap: 20px;
+    width: 95%;
+    height: 300px;
+}
+
+.case .mm:first-child {
+    width: 50%;
+}
+
+.mm {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+
+.mm:hover {
+    width: 50%;
+    padding-bottom: 90px;
+}
+
+.case:hover .mm:not(:hover) {
+    width: 15%;
+}
+
+.co{
+    margin: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.case{
+    padding: 20px;
 }
 
 .card{
     transition: all .4s;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .card:hover{
@@ -61,5 +157,16 @@
 }
 
 .bg-primary{
-    background-color: #f8c6bd;
+    background-color: #d76955;
+}
+
+.col h2{
+    color: #fb8fec;
+}
+
+.ca{
+    display: grid;
+    color: #fb8fec;
+    place-items: center;
+    padding-bottom: 30px;
 }
